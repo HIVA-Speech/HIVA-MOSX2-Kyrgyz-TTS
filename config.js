@@ -41,13 +41,13 @@ window.CONFIG = {
   CHECK_MAX_ATTEMPTS: 2,  // попыток (между ними — совет проверить громкость)
 
   // Контрольный вопрос в середине теста: «Бардык төрт шкалада 0 тандаңыз». null — выключить.
-  CATCH_AUDIO: "check/catch.mp3",
+  // Выключено, пока нет записи; чтобы включить: CATCH_AUDIO: "check/catch.mp3"
+  CATCH_AUDIO: null,
 
   // Пробные примеры (якоря шкалы): натуральная речь и заведомо плохой синтез. Не входят в анализ.
-  TRAINING: [
-    { id: "train_natural", audio: "train/natural.mp3" },
-    { id: "train_low", audio: "train/low.mp3" }
-  ],
+  // Выключено, пока нет записей; чтобы включить:
+  // TRAINING: [{ id: "train_natural", audio: "train/natural.mp3" }, { id: "train_low", audio: "train/low.mp3" }],
+  TRAINING: [],
 
   DEFAULT_LANG: "ky"
 };
